@@ -1,0 +1,35 @@
+@media screen and (min-width: 1200px) {
+	#penknife-img{
+		display: table;
+		margin: auto;
+	}
+
+	.charts{
+		width: 768px;
+		/*display: table;*/
+		margin: auto;
+	}
+
+	.four-media-block{
+		display: table;
+		margin: auto;
+	}
+
+	.media-name{
+		font-size: 20px;
+		font-family: 微軟正黑體;
+		margin-top: 40px;
+	}
+
+	.media-img{
+		border: 1px solid black;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 979px){
+	
+}
+
+@media screen and (max-width: 767px) {
+
+}
