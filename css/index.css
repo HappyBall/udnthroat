@@ -27,9 +27,68 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 979px){
-	
+	#penknife-img{
+		/*width: 100%;*/
+		display: table;
+		margin: auto;
+	}
+
+	#penknife-img img{
+		width: 100%;
+	}
+
+	.charts{
+		width: 100%;
+		/*display: table;*/
+		/*margin: auto;*/
+	}
+
+	.four-media-block{
+		display: table;
+		margin: auto;
+	}
+
+	.media-name{
+		font-size: 20px;
+		font-family: 微軟正黑體;
+		margin-top: 40px;
+	}
+
+	.media-img{
+		border: 1px solid black;
+	}
+
 }
 
 @media screen and (max-width: 767px) {
+	#penknife-img{
+		/*width: 100%;*/
+		display: table;
+		margin: auto;
+	}
 
+	#penknife-img img{
+		width: 100%;
+	}
+
+	.charts{
+		width: 100%;
+		/*display: table;*/
+		/*margin: auto;*/
+	}
+
+	.four-media-block{
+		display: table;
+		margin: auto;
+	}
+
+	.media-name{
+		font-size: 20px;
+		font-family: 微軟正黑體;
+		margin-top: 40px;
+	}
+
+	.media-img{
+		border: 1px solid black;
+	}
 }
