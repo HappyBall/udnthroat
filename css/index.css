@@ -1,7 +1,86 @@
+#worst-appledaily{
+	background-image: url(../img/worstnews_appledaily.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#worst-ettoday{
+	background-image: url(../img/worstnews_ettoday.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#worst-ltn{
+	background-image: url(../img/worstnews_ltn.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#worst-chinatimes{
+	background-image: url(../img/worstnews_chinatimes.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#worst-udn{
+	background-image: url(../img/worstnews_udn.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#worst-cna{
+	background-image: url(../img/worstnews_cna.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#penknife-img{
+	background-image: url(../img/penknife.jpg);
+	background-size: cover;
+	background-position: center;
+	display: table;
+	margin: auto;
+	width: 100%;
+}
+
+.worst-news{
+	margin-top: 40px;
+}
+
+.worst-news-block{
+	width: 100%;
+	/*display: table;*/
+	margin-top: 10px;
+}
+
+.worst-news-title{
+	font-family: 微軟正黑體;
+	display: table;
+}
+
+.worst-news-text{
+	margin-top: 20px;
+}
+
+.worst-news-content{
+	font-family: 微軟正黑體;
+	width: 100%;
+	/*margin-left: 5%;*/
+	text-align: justify;
+	margin-top: 20px;
+}
+
+.red-text{
+	color: red;
+}
+
 @media screen and (min-width: 1200px) {
-	#penknife-img{
-		display: table;
-		margin: auto;
+	body{
+		padding-bottom: 40px;
+	}
+
+	#outer-container{
+		width: 768px;
 	}
 
 	.charts{
@@ -24,17 +103,30 @@
 	.media-img{
 		border: 1px solid black;
 	}
-}
 
-@media screen and (min-width: 768px) and (max-width: 979px){
-	#penknife-img{
-		/*width: 100%;*/
-		display: table;
-		margin: auto;
+	.worst-news-title{
+		font-size: 24px;
 	}
 
-	#penknife-img img{
+	.worst-news-content{
+		font-size: 18px;
+		line-height: 25px;
+	}
+
+	.worst-news-img{
+		float: left;
+		width: 50%;
+	}
+
+	.worst-news-img img{
 		width: 100%;
+	}
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px){
+	body{
+		padding-bottom: 40px;
 	}
 
 	.charts{
@@ -56,23 +148,27 @@
 
 	.media-img{
 		border: 1px solid black;
+	}
+
+	.worst-news-title{
+		font-size: 24px;
+	}
+
+	.worst-news-content{
+		font-size: 18px;
+		line-height: 25px;
 	}
 
 }
 
 @media screen and (max-width: 767px) {
-	#penknife-img{
-		/*width: 100%;*/
-		display: table;
-		margin: auto;
-	}
-
-	#penknife-img img{
-		width: 100%;
+	body{
+		padding-bottom: 40px;
 	}
 
 	.charts{
 		width: 100%;
+		height: 200px;
 		/*display: table;*/
 		/*margin: auto;*/
 	}
@@ -91,4 +187,23 @@
 	.media-img{
 		border: 1px solid black;
 	}
+
+	.media-img img{
+		width: 100%;
+	}
+
+	.worst-news-img img{
+		width: 99%;
+	}
+
+	.worst-news-title{
+		font-size: 20px;
+	}
+
+	.worst-news-content{
+		font-size: 14px;
+		line-height: 20px;
+		margin-top: 10px;
+	}
 }
+

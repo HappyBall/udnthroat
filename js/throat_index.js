@@ -12,6 +12,8 @@ var colors = ["#d8ba71", "#ec4a55", "#fef36f","#febb6d", "#fd888f", "#51a7de"];
 var names = ["自由時報", "蘋果日報", "東森新聞雲", "聯合新聞網", "中國時報", "中央社"];
 var sums = [];
 
+var medianames = ['appledaily', 'ettoday', 'ltn', 'chinatimes', 'udn', 'cna'];
+
 //-------------------------------------------------------------------------------------------//
 
 
@@ -23,7 +25,7 @@ d3.csv("data/udn_throat_data.csv", function(throatData){
 	for (var j = 0; j < names.length; j++) {
 		sums.push( parseInt(throatData[throatData.length-1][names[j]] ));
 	};
-	console.log(sums);
+	// console.log(sums);
 
 	var totalDataSeries = [];
 	for (var m = 0; m < names.length; m++) {
@@ -32,7 +34,7 @@ d3.csv("data/udn_throat_data.csv", function(throatData){
 			"y": sums[m]
 		});
 	};
-	console.log(totalDataSeries);
+	// console.log(totalDataSeries);
 
 	//plot for sum chart
 	$(document).ready(function(){
@@ -115,7 +117,7 @@ d3.csv("data/udn_throat_data.csv", function(throatData){
 						break;
 					}
 				};
-				console.log(hannibalDataSeries);
+				// console.log(hannibalDataSeries);
 
 
 				//plot for hannibal chart
@@ -197,7 +199,7 @@ d3.csv("data/udn_throat_data.csv", function(throatData){
 						break;
 					}
 				};
-				console.log(coldBloodDataSeries);
+				// console.log(coldBloodDataSeries);
 
 
 				//plot for coldblooded chart
@@ -273,7 +275,7 @@ d3.csv("data/udn_throat_data.csv", function(throatData){
 						break;
 					}
 				};
-				console.log(deathSentenceDataSeries);
+				// console.log(deathSentenceDataSeries);
 
 
 				//plot for death sentence chart
@@ -335,4 +337,20 @@ d3.csv("data/udn_throat_data.csv", function(throatData){
 
 
 				});
+});
+
+$(document).ready(function(){
+	// console.log($('#penknife-img').width());
+	$('#penknife-img').css('height', $('#penknife-img').width()*493/768);
+	$('.worst-news-block').css('height', $('.worst-news-block').width()*419/629);
+
+	// var outer_height = $(".worst-news-block").height();
+
+	/*for (var i = 0; i < medianames.length; i++){
+		var id = '#worst-text-' + medianames[i];
+		var text_height = $(id).height();
+		var margin = (outer_height - text_height)/2;
+
+		$(id).css("margin-top", margin);
+	}*/
 });
